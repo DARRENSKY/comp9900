@@ -1,6 +1,7 @@
 Flask
 Jinja2
-Flask-RESTful
+flask-restful
+inflection
 jsonschema
 six
 flask_cors
