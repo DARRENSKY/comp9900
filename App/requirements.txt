@@ -1,0 +1,13 @@
+Flask
+Jinja2
+Flask-RESTful
+jsonschema
+six
+flask_cors
+requests
+pymongo
+pattern
+nltk
+rivescript
+wikipedia
+

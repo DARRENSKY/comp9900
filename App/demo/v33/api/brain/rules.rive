@@ -1,0 +1,36 @@
+
+! version = 2.0
+
++ hello *
+- Hello,what can I help you?
++ hello
+- Hello,what can I help you?
++ hey *
+- Hey,what can I help you?
++ hey
+- Hey,what can I help you?
++ hi *
+- Hi, what can I help you?
++ hi
+- Hi, what can I help you?
++ nice to meet you
+- Nice to meet you too
++ nice to meet u
+- Nice to meet you too
++ how are you
+- I'm great, how are you?
++ how are u
+- I'm great, how are you?
++ hi how are u
+- I'm great, how are you?
+- I'm good, you?
+- Good :) you?
+- Great! You?
+- I'm fine, thanks for asking!
++ hi how are you
+- I'm great, how are you?
+- I'm good, you?
+- Good :) you?
+- Great! You?
+- I'm fine, thanks for asking!
+
