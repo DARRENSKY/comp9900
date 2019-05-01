@@ -1,9 +1,11 @@
 ## How to run the project:
-
+    
+    1. unzip comp9900-master.zip
     1. type "python3 wrapper.py"
     2. type "cd Chatbot"
     3. type "npm intsall"
     4. type "npm start"
+    
 
 
 ## Other Information:
@@ -16,4 +18,4 @@
     Database:
         1.Mlab (online mongodb server) has been used in our project, so you do not need to deploy database.
         2.If you want to check the online database, please log in "https://mlab.com/login/" 
-    
+   
