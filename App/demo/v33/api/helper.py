@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from .localDB import localDB
-from pattern.text.en import singularize
+import inflection
 from nltk.corpus import stopwords
 from .relevantTable import relevantTable
 from .chapterTable import chapterTB
@@ -326,10 +326,12 @@ def wikifunction(query):
 # Jaccard-similarity function to get relevant score between two sentence
 def jaccard_similarity(string1, string2):
     list1 = [word for word in string1.split() if word not in stopwords.words('english')]
-    list1 = [singularize(plural) for plural in list1]
+    # list1 = [singularize(plural) for plural in list1]
+    list1 = [inflection.singularize(plural) for plural in list1]
     list1 = list(set(list1))
     list2 = [word for word in string2.split() if word not in stopwords.words('english')]
-    list2 = [singularize(plural) for plural in list2]
+    # list2 = [singularize(plural) for plural in list2]
+    list2 = [inflection.singularize(plural) for plural in list2]
     list2 = list(set(list2))
 
     intersection = len(list(set(list1).intersection(list2)))
@@ -394,7 +396,8 @@ def filterFuc(question):
 
     for plural in key_list:
         if plural != "vs":
-            key_list[key_list.index(plural)] = singularize(plural)
+            # key_list[key_list.index(plural)] = singularize(plural)
+            key_list[key_list.index(plural)] = inflection.singularize(plural)
     key = ' '.join(key_list)
 
     if key in filterTB:
@@ -440,6 +443,7 @@ def process(key):
 
     for plural in key_list:
         if plural != "vs":
-            key_list[key_list.index(plural)] = singularize(plural)
+            # key_list[key_list.index(plural)] = singularize(plural)
+            key_list[key_list.index(plural)] = inflection.singularize(plural)
     key = ' '.join(key_list)
     return key
