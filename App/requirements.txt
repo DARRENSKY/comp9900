@@ -7,8 +7,7 @@ six
 flask_cors
 requests
 pymongo
-pattern
 nltk
 rivescript
 wikipedia
-
+Swagger-py-codegen
