@@ -1,0 +1,38 @@
+.input-message {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.input-button {
+    color: #3e70de;
+    border: none;
+    border-color: black;
+}
+
+.input-button.focus, .input-button:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.footer-color {
+    /* background-color: white; */
+}
+
+.input-link {
+    color: #3e70de;
+    background: transparent;
+    border: none;
+}
+
+.input-link.focus, .input-link:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.borderleft{
+    border-left: 5px;
+    border-color: black;
+    border-style: none none none solid !important;
+    padding: 8px 8px 16px 8px !important;
+}
